@@ -11,7 +11,7 @@ ApplicationWindow {
 
     menuBar: MenuBar {
         Menu {
-            title: qsTr("&File")
+            title: qsTr("&File ...")
             MenuItem {
                 text: qsTr("&Open")
                 onTriggered: messageDialog.show(qsTr("Open action triggered"));
