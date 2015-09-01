@@ -1,6 +1,6 @@
-
 import QtQuick 2.0
 //import "../common"
+// This create a new ListView
 
 Rectangle {
     width: 80
