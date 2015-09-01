@@ -25,13 +25,14 @@ ApplicationWindow {
 
     MainForm {
         id: mainForm
+
         anchors.fill: parent
-        button1.onClicked: {
-            mainForm.visible = false
-            myListView.visible = true
-        }
-        button2.onClicked: messageDialog.show(qsTr("Button 2 pressed"))
-        button3.onClicked: messageDialog.show(qsTr("Button 3 pressed"))
+        button1.onClicked: messageDialog.show("charging ...")
+//            mainForm.visible = false
+//            myListView.visible = true
+
+//        button2.onClicked: messageDialog.show(qsTr("Button 2 pressed"))
+//        button3.onClicked: messageDialog.show(qsTr("Button 3 pressed"))
     }
 
     MessageDialog {
@@ -44,8 +45,8 @@ ApplicationWindow {
         }
     }
 
-    ListView1 {
-        id: myListView
-        visible: false
-    }
+//    ListView1 {
+//        id: myListView
+//        visible: false
+//    }
 }
